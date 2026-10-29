@@ -37,4 +37,4 @@ Selamat datang di repositori portofolio resmi saya. Website interaktif ini diban
 ## 📬 Hubungi Saya
 - 🌐 **Website Portofolio:** [pua21.github.io/Portofolio](https://pua21.github.io/Portofolio/)
 - 💻 **GitHub:** [@Pua21](https://github.com/Pua21)
-- 💼 **Status:** Terbuka untuk kesempatan kerja Full-time / Kontrak / Proyek
+- 💼 **Status:** Terbuka untuk kesempatan Kerja / Magang / Proyek
