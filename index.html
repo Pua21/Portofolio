@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Pengembang Perangkat Lunak & AI Specialist</title>
+  <meta name="description" content="Portofolio lengkap proyek pengembangan aplikasi web, mobile, sistem ERP, serta machine learning terintegrasi AI.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080c14',
+              card: '#0f172a',
+              border: 'rgba(255, 255, 255, 0.08)',
+              cyan: '#38bdf8',
+              blue: '#3b82f6',
+              emerald: '#10b981',
+              purple: '#a855f7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#080c14] text-slate-100 min-h-screen relative selection:bg-sky-500 selection:text-white">
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow"></div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 glass-panel border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-extrabold text-white text-base shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+          DEV
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm font-bold tracking-tight text-white group-hover:text-sky-400 transition-colors">Portofolio Developer</span>
+          <span class="text-[11px] text-slate-400 font-medium -mt-0.5">Software & AI Engineer</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-300">
+        <a href="#featured" class="hover:text-sky-400 transition-colors">Unggulan</a>
+        <a href="#projects" class="hover:text-sky-400 transition-colors">Semua Project</a>
+        <a href="#skills" class="hover:text-sky-400 transition-colors">Keahlian</a>
+        <a href="#contact" class="hover:text-sky-400 transition-colors">Kontak</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a href="#contact" class="px-4 py-2 text-xs font-semibold rounded-lg bg-sky-500/10 text-sky-400 border border-sky-500/30 hover:bg-sky-500 hover:text-white transition-all shadow-sm">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 pt-16 pb-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs font-medium text-slate-300 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Siap Bekerja & Berkolaborasi</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        Membangun Solusi Digital dari <br class="hidden sm:inline" />
+        <span class="text-gradient-cyan">Full-Stack Web</span> hingga <span class="text-gradient-emerald">Machine Learning & AI</span>.
+      </h1>
+
+      <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
+        Kumpulan rekayasa perangkat lunak terpilih: aplikasi web enterprise terintegrasi AI, sistem reservasi mobile, otomasi data pipeline, serta implementasi arsitektur berstandar industri.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-semibold text-sm shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:-translate-y-0.5 transition-all">
+          Eksplorasi Project
+        </a>
+        <a href="#contact" class="px-6 py-3 rounded-xl glass-card text-slate-300 font-semibold text-sm hover:text-white hover:border-slate-600 hover:-translate-y-0.5 transition-all">
+          Informasi Kontak (HRD)
+        </a>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-14 pt-10 border-t border-slate-800/60">
+        <div class="p-4 rounded-xl glass-card">
+          <div id="statTotalProjects" class="text-2xl sm:text-3xl font-extrabold text-sky-400 mb-1">11+</div>
+          <div class="text-xs text-slate-400 font-medium">Project Terkurasi</div>
+        </div>
+        <div class="p-4 rounded-xl glass-card">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mb-1">4+</div>
+          <div class="text-xs text-slate-400 font-medium">Bahasa Pemrograman</div>
+        </div>
+        <div class="p-4 rounded-xl glass-card">
+          <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 mb-1">100%</div>
+          <div class="text-xs text-slate-400 font-medium">Database & Kode Lengkap</div>
+        </div>
+        <div class="p-4 rounded-xl glass-card">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 mb-1">AI & ERP</div>
+          <div class="text-xs text-slate-400 font-medium">Spesialisasi Modern</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Spotlight Section -->
+  <section id="featured" class="relative z-10 py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">Unggulan Utama</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white">Project Unggulan (Spotlight)</h3>
+      </div>
+      <span class="text-xs text-slate-400 hidden sm:inline">Pilihan karya dengan kompleksitas & dampak tinggi</span>
+    </div>
+
+    <div id="spotlightContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Injected by app.js -->
+    </div>
+  </section>
+
+  <!-- All Projects Section with Filters & Search -->
+  <section id="projects" class="relative z-10 py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">Koleksi Lengkap</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white">Eksplorasi Seluruh Portofolio</h3>
+      </div>
+
+      <!-- Live Search Box -->
+      <div class="w-full md:w-72">
+        <div class="relative">
+          <input 
+            type="text" 
+            id="projectSearch" 
+            placeholder="Cari project / teknologi..." 
+            class="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"
+          />
+          <svg class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Buttons (Chips) -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      <button data-category="all" class="filter-btn active px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:text-white transition-all">
+        Semua Kategori
+      </button>
+      <button data-category="ai-data" class="filter-btn px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:text-white transition-all">
+        🤖 AI, Data & ERP
+      </button>
+      <button data-category="fullstack" class="filter-btn px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:text-white transition-all">
+        🌐 Full-Stack (PHP / MySQL)
+      </button>
+      <button data-category="fintech-iot" class="filter-btn px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:text-white transition-all">
+        ⚡ Fintech & IoT
+      </button>
+      <button data-category="mobile" class="filter-btn px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:text-white transition-all">
+        📱 Mobile Apps (Flutter)
+      </button>
+      <button data-category="architecture" class="filter-btn px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:text-white transition-all">
+        🏛️ Software Architecture
+      </button>
+    </div>
+
+    <!-- Projects Grid Container -->
+    <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Injected dynamically by app.js -->
+    </div>
+  </section>
+
+  <!-- Skills & Tech Arsenal -->
+  <section id="skills" class="relative z-10 py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/80">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">Penguasaan Teknis</h2>
+      <h3 class="text-2xl sm:text-3xl font-bold text-white">Tech Arsenal & Kemampuan</h3>
+      <p class="text-slate-400 text-sm mt-2">Daftar bahasa pemrograman, framework, dan peralatan yang telah diimplementasikan dalam berbagai project nyata.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="glass-card rounded-2xl p-6">
+        <h4 class="text-base font-bold text-white mb-4 flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 mr-2.5"></span>
+          AI & Data Science
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Python</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Scikit-Learn</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Streamlit</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Google Gemini API</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Pandas</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Plotly</span>
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6">
+        <h4 class="text-base font-bold text-white mb-4 flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-sky-400 mr-2.5"></span>
+          Backend & Full-Stack
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">PHP Native</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">MySQL</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">REST API</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Google OAuth 2.0</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Payment Gateway</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">HTML5 & CSS3</span>
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6">
+        <h4 class="text-base font-bold text-white mb-4 flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-purple-400 mr-2.5"></span>
+          Mobile Development
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Flutter</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Dart</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Provider</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Multi-Platform UI</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">HTTP Interceptors</span>
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6">
+        <h4 class="text-base font-bold text-white mb-4 flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-400 mr-2.5"></span>
+          ERP & Architecture
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Odoo 16/17</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Docker Compose</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">PostgreSQL</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">Java OOP</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700/60">15+ GoF Patterns</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & HR Section -->
+  <section id="contact" class="relative z-10 py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <div class="glass-card rounded-3xl p-8 sm:p-12 text-center border-sky-500/20 relative overflow-hidden">
+      <div class="relative z-10">
+        <div class="inline-flex p-3 rounded-2xl bg-sky-500/10 text-sky-400 border border-sky-500/30 mb-6">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Siap untuk Peluang & Kolaborasi Baru</h3>
+        <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto mb-8">
+          Tertarik dengan solusi teknologi yang telah saya bangun atau ingin mendiskusikan peluang kerja sama? Saya sangat terbuka untuk berdiskusi dengan tim HRD dan Tech Lead.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="mailto:emailanda@example.com" class="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-semibold text-sm shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:-translate-y-0.5 transition-all flex items-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Kirim Email Langsung
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl glass-card text-slate-300 font-semibold text-sm hover:text-white hover:border-slate-600 hover:-translate-y-0.5 transition-all flex items-center">
+            <svg class="w-4 h-4 mr-2 text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.738-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn Profile
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl glass-card text-slate-300 font-semibold text-sm hover:text-white hover:border-slate-600 hover:-translate-y-0.5 transition-all flex items-center">
+            <svg class="w-4 h-4 mr-2 text-slate-300" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-slate-800/80 py-8 px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Portofolio Pengembang Perangkat Lunak. Didesain dengan arsitektur data-driven terkurasi.</p>
+      <p class="text-slate-400">Status: Tersedia untuk Pekerjaan Full-time / Kontrak</p>
+    </div>
+  </footer>
+
+  <!-- Modal Detail Project -->
+  <div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity duration-300">
+    <div id="modalContent" class="glass-panel w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl p-6 sm:p-8 border border-slate-700/80 shadow-2xl relative">
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="mb-6 pr-10">
+        <span id="modalCategory" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/30">
+          Kategori
+        </span>
+        <h3 id="modalTitle" class="text-2xl sm:text-3xl font-extrabold text-white mt-3">
+          Nama Project
+        </h3>
+      </div>
+
+      <!-- Tech Stack Badges -->
+      <div class="mb-6">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Teknologi yang Digunakan</h4>
+        <div id="modalTechStack" class="flex flex-wrap gap-2">
+          <!-- Filled by app.js -->
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="mb-6">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Deskripsi Solusi</h4>
+        <p id="modalDescription" class="text-slate-300 text-sm leading-relaxed">
+          Deskripsi lengkap project...
+        </p>
+      </div>
+
+      <!-- Key Features -->
+      <div class="mb-6">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Fitur-Fitur Utama yang Ditonjolkan</h4>
+        <ul id="modalFeatures" class="space-y-2">
+          <!-- Filled by app.js -->
+        </ul>
+      </div>
+
+      <!-- Challenges & Architecture -->
+      <div class="mb-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+        <h4 class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">Tantangan & Pendekatan Teknis</h4>
+        <p id="modalChallenges" class="text-xs text-slate-300 leading-relaxed">
+          Tantangan implementasi...
+        </p>
+      </div>
+
+      <!-- Local Workspace Path -->
+      <div class="p-3 rounded-lg bg-slate-900/50 border border-slate-800 text-[11px] text-slate-500 flex items-center justify-between">
+        <span class="font-mono truncate mr-2" id="modalLocalPath">D:\...</span>
+        <span class="flex-shrink-0 text-slate-400">Verifikasi Lokal</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fallback Embedded Projects (Guarantees 100% offline file:// compatibility) -->
+  <script>
+    window.FALLBACK_PROJECTS = [
+      {
+        "id": "customer-churn-ml",
+        "title": "Customer Churn Prediction & BI Dashboard",
+        "category": "ai-data",
+        "categoryLabel": "AI & Machine Learning",
+        "featured": true,
+        "icon": "brain",
+        "summary": "Dashboard prediktif berbasis Machine Learning (Random Forest) dan Streamlit untuk memprediksi churn pelanggan telekomunikasi serta visualisasi analitik interaktif.",
+        "description": "Aplikasi Business Intelligence prediktif yang dirancang untuk menganalisis perilaku pelanggan dan memprediksi kemungkinan berhenti berlangganan (churn) secara real-time. Dilengkapi antarmuka interaktif yang memudahkan analis bisnis dan tim retensi mengambil keputusan berbasis data.",
+        "techStack": ["Python", "Streamlit", "Scikit-Learn", "Random Forest", "Plotly", "Pandas"],
+        "features": [
+          "Prediksi risiko churn instan dengan scoring probabilitas dan interpretasi fitur",
+          "Interactive KPI cards & visualisasi korelasi faktor churn menggunakan Plotly",
+          "Model machine learning terlatih (Random Forest classifier pipeline)",
+          "Fitur ekspor otomatis daftar pelanggan berisiko tinggi untuk tim retensi pemasaran",
+          "Antarmuka dark glassmorphism modern dengan performa responsif"
+        ],
+        "challenges": "Mengoptimalkan akurasi model Random Forest pada dataset berdimensi banyak serta menyajikan visualisasi data yang intuitif bagi stakeholder non-teknis.",
+        "localPath": "C:\\Users\\BIBOSS\\KecerdasanBisnis\\Customer_Churn"
+      },
+      {
+        "id": "truecounting-solution",
+        "title": "TrueCounting Solution (ERP Akuntansi & AI Analyst)",
+        "category": "fullstack",
+        "categoryLabel": "Full-Stack & AI",
+        "featured": true,
+        "icon": "calculator",
+        "summary": "Sistem akuntansi enterprise komprehensif terintegrasi Google Gemini AI untuk audit keuangan otomatis, multi-tier RBAC, dan mobile API.",
+        "description": "Platform tata kelola keuangan dan akuntansi menyeluruh yang mencakup seluruh siklus pembukuan (General Ledger hingga Laporan Keuangan resmi). Mengintegrasikan Google Gemini AI sebagai analis keuangan pintar untuk audit anomali transaksi dan rekomendasi rasio likuiditas secara otomatis.",
+        "techStack": ["PHP", "MySQL", "Google Gemini API", "Flutter / Dart", "REST API", "CSS Glassmorphism"],
+        "features": [
+          "AI Financial Analyst: Analisis otomatis kesehatan neraca dan deteksi anomali via Gemini API",
+          "Multi-Tier RBAC: Hak akses berjenjang 3 level (Admin, Akuntan, Kasir) dengan demo quick-switch",
+          "Validasi Transaksi Otomatis: Alur verifikasi jurnal berstatus Pending menuju Validated",
+          "Siklus Akuntansi Penuh: Jurnal Umum, Buku Besar, Neraca Saldo, Laba Rugi, dan Neraca",
+          "Fitur Tutup Buku Lanjutan: Penutupan periode otomatis dan pembuatan Jurnal Balik (Auto-Reversing)",
+          "Cross-Platform API: Folder backend API modular siap terhubung dengan aplikasi Flutter mobile"
+        ],
+        "challenges": "Merancang integritas data relasional multi-entitas akuntansi serta mengotomasi query agregasi laporan keuangan dengan performa tinggi dan filter status validasi.",
+        "localPath": "D:\\laragon\\www\\Komputerasi Akuntansi\\Akuntansi_Baru"
+      },
+      {
+        "id": "smart-charging-fintech",
+        "title": "Smart Charging & IoT Outlet Rental System",
+        "category": "fintech-iot",
+        "categoryLabel": "Fintech & IoT",
+        "featured": true,
+        "icon": "zap",
+        "summary": "Platform rental stop kontak cerdas untuk pengisian daya kendaraan listrik & gadget dengan gateway pembayaran otomatis dan Google SSO.",
+        "description": "Solusi fintech berbasis IoT untuk penyewaan stop kontak pintar (smart charging station). Sistem mengatur aktivasi sesi daya dengan timer dinamis, mengintegrasikan pembayaran digital otomatis, dan mengirimkan bukti transaksi langsung ke email pengguna.",
+        "techStack": ["PHP", "MySQL", "Aiyo Payment Gateway", "Google OAuth 2.0", "PHPMailer", "JavaScript"],
+        "features": [
+          "Live Countdown Timer: Penghitung waktu sewa real-time dengan status update dinamis",
+          "Payment Gateway Integration: Pembuatan faktur digital dan verifikasi webhook otomatis melalui Aiyo API",
+          "Google Single Sign-On (SSO): Autentikasi modern dan praktis dengan akun Google resmi",
+          "Manajemen Sesi Interaktif: Fitur perpanjangan durasi sewa di tengah jalan dan force-stop outlet",
+          "Automated Email Invoicing: Notifikasi dan invoice PDF dikirim otomatis via PHPMailer"
+        ],
+        "challenges": "Menangani sinkronisasi state timer di sisi client-server dan memastikan keandalan callback payment gateway terhadap perubahan status database secara atomik.",
+        "localPath": "D:\\laragon\\www\\dashboard_fintech"
+      },
+      {
+        "id": "cuereserve-billiard",
+        "title": "CueReserve (Billiard Table Reservation System)",
+        "category": "mobile",
+        "categoryLabel": "Mobile Apps",
+        "featured": false,
+        "icon": "smartphone",
+        "summary": "Aplikasi reservasi meja biliar cross-platform berbasis Flutter dengan backend REST API PHP dan pengecekan ketersediaan jadwal real-time.",
+        "description": "Aplikasi reservasi venue olahraga biliar yang menghubungkan pengguna mobile dengan sistem manajemen meja. Memungkinkan pengguna memilih jenis meja, memeriksa jam yang masih kosong, dan melihat promosi yang sedang berlangsung.",
+        "techStack": ["Flutter", "Dart", "PHP", "MySQL", "REST API"],
+        "features": [
+          "Real-time Table Availability: Pengecekan ketersediaan jadwal meja secara dinamis",
+          "Detail Fasilitas & Spesifikasi: Visualisasi tipe meja, kualitas laken, dan tarif per jam",
+          "Promo & Banner Carousel: Modul upload promosi dari backend yang langsung tampil di aplikasi",
+          "Booking History & Customer Profile: Rekapitulasi histori transaksi pemesanan pengguna"
+        ],
+        "challenges": "Mencegah tabrakan jadwal (double-booking) reservasi meja pada rentang waktu yang sama melalui validasi query SQL di backend API.",
+        "localPath": "D:\\laragon\\www\\projek_mauren"
+      },
+      {
+        "id": "trackerduit-mobile",
+        "title": "TrackerDuit (Smart Expense & Budgeting)",
+        "category": "mobile",
+        "categoryLabel": "Mobile Apps",
+        "featured": false,
+        "icon": "wallet",
+        "summary": "Aplikasi manajemen keuangan pribadi dan pelacak pengeluaran berbasis Flutter dengan sinkronisasi backend PHP API.",
+        "description": "Aplikasi mobile finansial pribadi yang membantu pengguna mengatur anggaran pengeluaran, melacak arus kas harian, dan mengelola tagihan berulang secara terstruktur.",
+        "techStack": ["Flutter", "Dart", "Provider State Management", "PHP", "MySQL"],
+        "features": [
+          "Financial Blueprint & Budgeting: Pemetaan pos anggaran dan target pengeluaran bulanan",
+          "Fixed Bills Reminder: Modul khusus untuk memantau tagihan rutin (listrik, kos, langganan)",
+          "Analisis Visual Arus Kas: Diagram interaktif ringkasan perbandingan pemasukan vs pengeluaran",
+          "Kustomisasi Kategori Dinamis: Penambahan dan pengelolaan kategori transaksi tanpa batas"
+        ],
+        "challenges": "Menerapkan state management yang reaktif dan efisien menggunakan Provider saat terjadi pembaruan data transaksi.",
+        "localPath": "D:\\StudioProjects\\trackerduit"
+      },
+      {
+        "id": "superstore-etl-pipeline",
+        "title": "Superstore ETL Pipeline & Big Data Analytics",
+        "category": "ai-data",
+        "categoryLabel": "Data Engineering",
+        "featured": false,
+        "icon": "database",
+        "summary": "Pipeline otomatis ingestion data skala besar (160+ MB dataset), validasi skema, cron scheduling, dan dashboard analitik ritel.",
+        "description": "Sistem otomatisasi pipeline data retail transaksi bervolume tinggi. Script ETL memproses dataset mentah, membersihkan inkonsistensi nilai, melakukan pengarsipan bertanggal, dan menyajikan visualisasi profitabilitas bisnis.",
+        "techStack": ["Python", "Pandas", "Plotly", "Batch Scripting (.bat)", "Cronjob", "Jupyter"],
+        "features": [
+          "Automated Ingestion Pipeline: Pembersihan dan standardisasi ratusan ribu baris data retail",
+          "Data Archiving & Versioning: Pencadangan otomatis dataset dengan format timestamp",
+          "Logging & Error Handling: Pencatatan seluruh aktivitas ingestion ke dalam file log terpusat",
+          "Retail Analytics: Analisis margin keuntungan per kategori produk dan performa wilayah"
+        ],
+        "challenges": "Mengoptimalkan penggunaan memori RAM Python Pandas saat memproses file CSV berukuran 160+ MB secara otomatis.",
+        "localPath": "D:\\tugas_superstore"
+      },
+      {
+        "id": "nusput-koperasi",
+        "title": "Koperasi Simpan Pinjam Nusaputera (Nusput)",
+        "category": "fullstack",
+        "categoryLabel": "Full-Stack Web",
+        "featured": false,
+        "icon": "users",
+        "summary": "Sistem informasi koperasi simpan pinjam berbasis web dengan pemisahan portal Admin & Anggota, Google OAuth, dan jurnal otomatis.",
+        "description": "Platform tata kelola koperasi simpan pinjam digital. Mengakomodasi pendaftaran anggota, permohonan pinjaman dengan upload berkas, approval bertingkat, serta perhitungan bunga dan mutasi simpanan bulanan.",
+        "techStack": ["PHP", "MySQL", "Google API Client (OAuth 2.0)", "Composer", "CSS3"],
+        "features": [
+          "Dual Portal Architecture: Dashboard terpisah untuk Admin Koperasi dan Anggota",
+          "Loan & Repayment Workflow: Pengajuan pinjaman daring, unggah berkas, dan verifikasi admin",
+          "Proses Bulanan Otomatis: Kalkulasi bunga dan penambahan simpanan wajib per periode",
+          "Google SSO Integration: Autentikasi aman anggota dengan akun Google via Composer vendor"
+        ],
+        "challenges": "Membangun kalkulasi bunga majemuk simpan pinjam yang akurat dan sinkronisasi laporan jurnal kas masuk/keluar.",
+        "localPath": "D:\\XAMPP\\htdocs\\Nusput12\\Nusput1"
+      },
+      {
+        "id": "odoo-erp-sip",
+        "title": "Enterprise ERP Custom Modules (Odoo)",
+        "category": "ai-data",
+        "categoryLabel": "Enterprise & ERP",
+        "featured": false,
+        "icon": "server",
+        "summary": "Modul kustom Odoo ERP untuk manajemen inventaris suku cadang iPhone dan sistem perpustakaan dengan arsitektur Docker & PostgreSQL.",
+        "description": "Pengembangan modul kustom tingkat enterprise pada platform Odoo 16/17. Mengimplementasikan struktur MVC, custom ORM models, integrasi database relasional PostgreSQL, dan lingkungan deployment terisolasi berbasis Docker Compose.",
+        "techStack": ["Python", "Odoo Framework", "PostgreSQL", "Docker Compose", "XML UI"],
+        "features": [
+          "Modul iPhone Spareparts: Pencatatan inventaris komponen, nomor seri, dan level stok",
+          "Modul Library Management: Sirkulasi buku, profil penulis, dan relasi multi-kategori",
+          "Docker Compose Environment: Pengaturan cepat server Odoo dan basis data PostgreSQL",
+          "Role-Based Security: Konfigurasi hak akses grup (Access Rights) menggunakan ir.model.access.csv"
+        ],
+        "challenges": "Menyesuaikan dependensi antar model Odoo dan memastikan deklarasi manifest XML serta hook migrasi data berjalan mulus di container Docker.",
+        "localPath": "D:\\SIP"
+      },
+      {
+        "id": "bookstore-pos-system",
+        "title": "Sistem Informasi Manajemen Toko Buku",
+        "category": "fullstack",
+        "categoryLabel": "Full-Stack Web",
+        "featured": false,
+        "icon": "book-open",
+        "summary": "Aplikasi kasir dan manajemen persediaan toko buku dengan dukungan relasi multi-tabel dan pelaporan omzet berkala.",
+        "description": "Sistem basis data terapan untuk operasional penjualan toko buku. Mengelola master data buku, penerbit, kategori, dan pelanggan, serta memfasilitasi transaksi kasir multi-item.",
+        "techStack": ["PHP", "MySQL", "HTML5", "CSS3"],
+        "features": [
+          "Master Data Relasional: CRUD terintegrasi Buku, Kategori, Penerbit, dan Pelanggan",
+          "Multi-Item POS Transaction: Pembuatan nota transaksi dengan banyak buku dalam satu nomor faktur",
+          "Laporan Penjualan: Rekapitulasi transaksi penjualan berdasarkan rentang tanggal tertentu"
+        ],
+        "challenges": "Menjaga integritas foreign key dan menghitung subtotal transaksi dinamis di sisi server.",
+        "localPath": "D:\\XAMPP\\htdocs\\24N10039_UASIBD_2025"
+      },
+      {
+        "id": "personal-web-audio",
+        "title": "Modern Interactive Portfolio & Media Landing Page",
+        "category": "fullstack",
+        "categoryLabel": "Web & UI/UX",
+        "featured": false,
+        "icon": "layout",
+        "summary": "Halaman web profil interaktif modern dengan background audio player terintegrasi dan tata letak responsif.",
+        "description": "Landing page portofolio personal dengan fokus pada estetika visual, transisi halus, dan elemen multimedia audio interaktif untuk pengalaman pengguna yang berkesan.",
+        "techStack": ["HTML5 Semantic", "CSS3 Animations", "JavaScript", "Audio Streaming"],
+        "features": [
+          "Integrated Audio Player: Pemutar musik latar interaktif dengan kendali pengguna",
+          "Responsive Typography & Visuals: Tata letak ramah perangkat desktop dan mobile",
+          "Clean Code Structure: Implementasi kode native tanpa overhead framework berat"
+        ],
+        "challenges": "Menangani kebijakan autoplay audio di browser modern agar pengalaman pengguna tetap natural dan menyenangkan.",
+        "localPath": "D:\\24.N1.0003_WebPribadi"
+      },
+      {
+        "id": "gof-design-patterns",
+        "title": "Gang of Four (GoF) Software Design Patterns Suite",
+        "category": "architecture",
+        "categoryLabel": "Software Architecture",
+        "featured": false,
+        "icon": "code",
+        "summary": "Implementasi komprehensif 15+ pola desain perangkat lunak (Creational, Structural, Behavioral) berbasis Java OOP murni.",
+        "description": "Koleksi implementasi arsitektur perangkat lunak berstandar industri menggunakan bahasa pemrograman Java. Menunjukkan pemahaman mendalam tentang prinsip SOLID, decoupling sistem, dan reusable code architecture.",
+        "techStack": ["Java", "OOP Principles", "Gang of Four Patterns", "Ant Build"],
+        "features": [
+          "Creational Patterns: Abstract Factory, Factory Method, Builder, Prototype, Singleton",
+          "Structural Patterns: Adapter, Bridge, Composite, Decorator, Flyweight, Proxy",
+          "Behavioral Patterns: Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor"
+        ],
+        "challenges": "Mendesain interface dan abstract class yang tepat guna tanpa over-engineering agar pola mudah dipahami dan diadaptasi.",
+        "localPath": "D:\\pua sigma"
+      }
+    ];
+  </script>
+
+  <!-- Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+

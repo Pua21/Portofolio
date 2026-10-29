@@ -1,0 +1,235 @@
+[
+  {
+    "id": "customer-churn-ml",
+    "title": "Customer Churn Prediction & BI Dashboard",
+    "category": "ai-data",
+    "categoryLabel": "AI & Machine Learning",
+    "featured": true,
+    "icon": "brain",
+    "summary": "Dashboard prediktif berbasis Machine Learning (Random Forest) dan Streamlit untuk memprediksi churn pelanggan telekomunikasi serta visualisasi analitik interaktif.",
+    "description": "Aplikasi Business Intelligence prediktif yang dirancang untuk menganalisis perilaku pelanggan dan memprediksi kemungkinan berhenti berlangganan (churn) secara real-time. Dilengkapi antarmuka interaktif yang memudahkan analis bisnis dan tim retensi mengambil keputusan berbasis data.",
+    "techStack": ["Python", "Streamlit", "Scikit-Learn", "Random Forest", "Plotly", "Pandas"],
+    "features": [
+      "Prediksi risiko churn instan dengan scoring probabilitas dan interpretasi fitur",
+      "Interactive KPI cards & visualisasi korelasi faktor churn menggunakan Plotly",
+      "Model machine learning terlatih (Random Forest classifier pipeline)",
+      "Fitur ekspor otomatis daftar pelanggan berisiko tinggi untuk tim retensi pemasaran",
+      "Antarmuka dark glassmorphism modern dengan performa responsif"
+    ],
+    "challenges": "Mengoptimalkan akurasi model Random Forest pada dataset berdimensi banyak serta menyajikan visualisasi data yang intuitif bagi stakeholder non-teknis.",
+    "localPath": "C:\\Users\\BIBOSS\\KecerdasanBisnis\\Customer_Churn",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "truecounting-solution",
+    "title": "TrueCounting Solution (ERP Akuntansi & AI Analyst)",
+    "category": "fullstack",
+    "categoryLabel": "Full-Stack & AI",
+    "featured": true,
+    "icon": "calculator",
+    "summary": "Sistem akuntansi enterprise komprehensif terintegrasi Google Gemini AI untuk audit keuangan otomatis, multi-tier RBAC, dan mobile API.",
+    "description": "Platform tata kelola keuangan dan akuntansi menyeluruh yang mencakup seluruh siklus pembukuan (General Ledger hingga Laporan Keuangan resmi). Mengintegrasikan Google Gemini AI sebagai analis keuangan pintar untuk audit anomali transaksi dan rekomendasi rasio likuiditas secara otomatis.",
+    "techStack": ["PHP", "MySQL", "Google Gemini API", "Flutter / Dart", "REST API", "CSS Glassmorphism"],
+    "features": [
+      "AI Financial Analyst: Analisis otomatis kesehatan neraca dan deteksi anomali via Gemini API",
+      "Multi-Tier RBAC: Hak akses berjenjang 3 level (Admin, Akuntan, Kasir) dengan demo quick-switch",
+      "Validasi Transaksi Otomatis: Alur verifikasi jurnal berstatus Pending menuju Validated",
+      "Siklus Akuntansi Penuh: Jurnal Umum, Buku Besar, Neraca Saldo, Laba Rugi, dan Neraca",
+      "Fitur Tutup Buku Lanjutan: Penutupan periode otomatis dan pembuatan Jurnal Balik (Auto-Reversing)",
+      "Cross-Platform API: Folder backend API modular siap terhubung dengan aplikasi Flutter mobile"
+    ],
+    "challenges": "Merancang integritas data relasional multi-entitas akuntansi serta mengotomasi query agregasi laporan keuangan dengan performa tinggi dan filter status validasi.",
+    "localPath": "D:\\laragon\\www\\Komputerasi Akuntansi\\Akuntansi_Baru",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "smart-charging-fintech",
+    "title": "Smart Charging & IoT Outlet Rental System",
+    "category": "fintech-iot",
+    "categoryLabel": "Fintech & IoT",
+    "featured": true,
+    "icon": "zap",
+    "summary": "Platform rental stop kontak cerdas untuk pengisian daya kendaraan listrik & gadget dengan gateway pembayaran otomatis dan Google SSO.",
+    "description": "Solusi fintech berbasis IoT untuk penyewaan stop kontak pintar (smart charging station). Sistem mengatur aktivasi sesi daya dengan timer dinamis, mengintegrasikan pembayaran digital otomatis, dan mengirimkan bukti transaksi langsung ke email pengguna.",
+    "techStack": ["PHP", "MySQL", "Aiyo Payment Gateway", "Google OAuth 2.0", "PHPMailer", "JavaScript"],
+    "features": [
+      "Live Countdown Timer: Penghitung waktu sewa real-time dengan status update dinamis",
+      "Payment Gateway Integration: Pembuatan faktur digital dan verifikasi webhook otomatis melalui Aiyo API",
+      "Google Single Sign-On (SSO): Autentikasi modern dan praktis dengan akun Google resmi",
+      "Manajemen Sesi Interaktif: Fitur perpanjangan durasi sewa di tengah jalan dan force-stop outlet",
+      "Automated Email Invoicing: Notifikasi dan invoice PDF dikirim otomatis via PHPMailer"
+    ],
+    "challenges": "Menangani sinkronisasi state timer di sisi client-server dan memastikan keandalan callback payment gateway terhadap perubahan status database secara atomik.",
+    "localPath": "D:\\laragon\\www\\dashboard_fintech",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "cuereserve-billiard",
+    "title": "CueReserve (Billiard Table Reservation System)",
+    "category": "mobile",
+    "categoryLabel": "Mobile Apps",
+    "featured": false,
+    "icon": "smartphone",
+    "summary": "Aplikasi reservasi meja biliar cross-platform berbasis Flutter dengan backend REST API PHP dan pengecekan ketersediaan jadwal real-time.",
+    "description": "Aplikasi reservasi venue olahraga biliar yang menghubungkan pengguna mobile dengan sistem manajemen meja. Memungkinkan pengguna memilih jenis meja, memeriksa jam yang masih kosong, dan melihat promosi yang sedang berlangsung.",
+    "techStack": ["Flutter", "Dart", "PHP", "MySQL", "REST API"],
+    "features": [
+      "Real-time Table Availability: Pengecekan ketersediaan jadwal meja secara dinamis",
+      "Detail Fasilitas & Spesifikasi: Visualisasi tipe meja, kualitas laken, dan tarif per jam",
+      "Promo & Banner Carousel: Modul upload promosi dari backend yang langsung tampil di aplikasi",
+      "Booking History & Customer Profile: Rekapitulasi histori transaksi pemesanan pengguna"
+    ],
+    "challenges": "Mencegah tabrakan jadwal (double-booking) reservasi meja pada rentang waktu yang sama melalui validasi query SQL di backend API.",
+    "localPath": "D:\\laragon\\www\\projek_mauren",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "trackerduit-mobile",
+    "title": "TrackerDuit (Smart Expense & Budgeting)",
+    "category": "mobile",
+    "categoryLabel": "Mobile Apps",
+    "featured": false,
+    "icon": "wallet",
+    "summary": "Aplikasi manajemen keuangan pribadi dan pelacak pengeluaran berbasis Flutter dengan sinkronisasi backend PHP API.",
+    "description": "Aplikasi mobile finansial pribadi yang membantu pengguna mengatur anggaran pengeluaran, melacak arus kas harian, dan mengelola tagihan berulang secara terstruktur.",
+    "techStack": ["Flutter", "Dart", "Provider State Management", "PHP", "MySQL"],
+    "features": [
+      "Financial Blueprint & Budgeting: Pemetaan pos anggaran dan target pengeluaran bulanan",
+      "Fixed Bills Reminder: Modul khusus untuk memantau tagihan rutin (listrik, kos, langganan)",
+      "Analisis Visual Arus Kas: Diagram interaktif ringkasan perbandingan pemasukan vs pengeluaran",
+      "Kustomisasi Kategori Dinamis: Penambahan dan pengelolaan kategori transaksi tanpa batas"
+    ],
+    "challenges": "Menerapkan state management yang reaktif dan efisien menggunakan Provider saat terjadi pembaruan data transaksi.",
+    "localPath": "D:\\StudioProjects\\trackerduit",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "superstore-etl-pipeline",
+    "title": "Superstore ETL Pipeline & Big Data Analytics",
+    "category": "ai-data",
+    "categoryLabel": "Data Engineering",
+    "featured": false,
+    "icon": "database",
+    "summary": "Pipeline otomatis ingestion data skala besar (160+ MB dataset), validasi skema, cron scheduling, dan dashboard analitik ritel.",
+    "description": "Sistem otomatisasi pipeline data retail transaksi bervolume tinggi. Script ETL memproses dataset mentah, membersihkan inkonsistensi nilai, melakukan pengarsipan bertanggal, dan menyajikan visualisasi profitabilitas bisnis.",
+    "techStack": ["Python", "Pandas", "Plotly", "Batch Scripting (.bat)", "Cronjob", "Jupyter"],
+    "features": [
+      "Automated Ingestion Pipeline: Pembersihan dan standardisasi ratusan ribu baris data retail",
+      "Data Archiving & Versioning: Pencadangan otomatis dataset dengan format timestamp",
+      "Logging & Error Handling: Pencatatan seluruh aktivitas ingestion ke dalam file log terpusat",
+      "Retail Analytics: Analisis margin keuntungan per kategori produk dan performa wilayah"
+    ],
+    "challenges": "Mengoptimalkan penggunaan memori RAM Python Pandas saat memproses file CSV berukuran 160+ MB secara otomatis.",
+    "localPath": "D:\\tugas_superstore",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "nusput-koperasi",
+    "title": "Koperasi Simpan Pinjam Nusaputera (Nusput)",
+    "category": "fullstack",
+    "categoryLabel": "Full-Stack Web",
+    "featured": false,
+    "icon": "users",
+    "summary": "Sistem informasi koperasi simpan pinjam berbasis web dengan pemisahan portal Admin & Anggota, Google OAuth, dan jurnal otomatis.",
+    "description": "Platform tata kelola koperasi simpan pinjam digital. Mengakomodasi pendaftaran anggota, permohonan pinjaman dengan upload berkas, approval bertingkat, serta perhitungan bunga dan mutasi simpanan bulanan.",
+    "techStack": ["PHP", "MySQL", "Google API Client (OAuth 2.0)", "Composer", "CSS3"],
+    "features": [
+      "Dual Portal Architecture: Dashboard terpisah untuk Admin Koperasi dan Anggota",
+      "Loan & Repayment Workflow: Pengajuan pinjaman daring, unggah berkas, dan verifikasi admin",
+      "Proses Bulanan Otomatis: Kalkulasi bunga dan penambahan simpanan wajib per periode",
+      "Google SSO Integration: Autentikasi aman anggota dengan akun Google via Composer vendor"
+    ],
+    "challenges": "Membangun kalkulasi bunga majemuk simpan pinjam yang akurat dan sinkronisasi laporan jurnal kas masuk/keluar.",
+    "localPath": "D:\\XAMPP\\htdocs\\Nusput12\\Nusput1",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "odoo-erp-sip",
+    "title": "Enterprise ERP Custom Modules (Odoo)",
+    "category": "ai-data",
+    "categoryLabel": "Enterprise & ERP",
+    "featured": false,
+    "icon": "server",
+    "summary": "Modul kustom Odoo ERP untuk manajemen inventaris suku cadang iPhone dan sistem perpustakaan dengan arsitektur Docker & PostgreSQL.",
+    "description": "Pengembangan modul kustom tingkat enterprise pada platform Odoo 16/17. Mengimplementasikan struktur MVC, custom ORM models, integrasi database relasional PostgreSQL, dan lingkungan deployment terisolasi berbasis Docker Compose.",
+    "techStack": ["Python", "Odoo Framework", "PostgreSQL", "Docker Compose", "XML UI"],
+    "features": [
+      "Modul iPhone Spareparts: Pencatatan inventaris komponen, nomor seri, dan level stok",
+      "Modul Library Management: Sirkulasi buku, profil penulis, dan relasi multi-kategori",
+      "Docker Compose Environment: Pengaturan cepat server Odoo dan basis data PostgreSQL",
+      "Role-Based Security: Konfigurasi hak akses grup (Access Rights) menggunakan ir.model.access.csv"
+    ],
+    "challenges": "Menyesuaikan dependensi antar model Odoo dan memastikan deklarasi manifest XML serta hook migrasi data berjalan mulus di container Docker.",
+    "localPath": "D:\\SIP",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "bookstore-pos-system",
+    "title": "Sistem Informasi Manajemen Toko Buku",
+    "category": "fullstack",
+    "categoryLabel": "Full-Stack Web",
+    "featured": false,
+    "icon": "book-open",
+    "summary": "Aplikasi kasir dan manajemen persediaan toko buku dengan dukungan relasi multi-tabel dan pelaporan omzet berkala.",
+    "description": "Sistem basis data terapan untuk operasional penjualan toko buku. Mengelola master data buku, penerbit, kategori, dan pelanggan, serta memfasilitasi transaksi kasir multi-item.",
+    "techStack": ["PHP", "MySQL", "HTML5", "CSS3"],
+    "features": [
+      "Master Data Relasional: CRUD terintegrasi Buku, Kategori, Penerbit, dan Pelanggan",
+      "Multi-Item POS Transaction: Pembuatan nota transaksi dengan banyak buku dalam satu nomor faktur",
+      "Laporan Penjualan: Rekapitulasi transaksi penjualan berdasarkan rentang tanggal tertentu"
+    ],
+    "challenges": "Menjaga integritas foreign key dan menghitung subtotal transaksi dinamis di sisi server.",
+    "localPath": "D:\\XAMPP\\htdocs\\24N10039_UASIBD_2025",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "personal-web-audio",
+    "title": "Modern Interactive Portfolio & Media Landing Page",
+    "category": "fullstack",
+    "categoryLabel": "Web & UI/UX",
+    "featured": false,
+    "icon": "layout",
+    "summary": "Halaman web profil interaktif modern dengan background audio player terintegrasi dan tata letak responsif.",
+    "description": "Landing page portofolio personal dengan fokus pada estetika visual, transisi halus, dan elemen multimedia audio interaktif untuk pengalaman pengguna yang berkesan.",
+    "techStack": ["HTML5 Semantic", "CSS3 Animations", "JavaScript", "Audio Streaming"],
+    "features": [
+      "Integrated Audio Player: Pemutar musik latar interaktif dengan kendali pengguna",
+      "Responsive Typography & Visuals: Tata letak ramah perangkat desktop dan mobile",
+      "Clean Code Structure: Implementasi kode native tanpa overhead framework berat"
+    ],
+    "challenges": "Menangani kebijakan autoplay audio di browser modern agar pengalaman pengguna tetap natural dan menyenangkan.",
+    "localPath": "D:\\24.N1.0003_WebPribadi",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  },
+  {
+    "id": "gof-design-patterns",
+    "title": "Gang of Four (GoF) Software Design Patterns Suite",
+    "category": "architecture",
+    "categoryLabel": "Software Architecture",
+    "featured": false,
+    "icon": "code",
+    "summary": "Implementasi komprehensif 15+ pola desain perangkat lunak (Creational, Structural, Behavioral) berbasis Java OOP murni.",
+    "description": "Koleksi implementasi arsitektur perangkat lunak berstandar industri menggunakan bahasa pemrograman Java. Menunjukkan pemahaman mendalam tentang prinsip SOLID, decoupling sistem, dan reusable code architecture.",
+    "techStack": ["Java", "OOP Principles", "Gang of Four Patterns", "Ant Build"],
+    "features": [
+      "Creational Patterns: Abstract Factory, Factory Method, Builder, Prototype, Singleton",
+      "Structural Patterns: Adapter, Bridge, Composite, Decorator, Flyweight, Proxy",
+      "Behavioral Patterns: Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor"
+    ],
+    "challenges": "Mendesain interface dan abstract class yang tepat guna tanpa over-engineering agar pola mudah dipahami dan diadaptasi.",
+    "localPath": "D:\\pua sigma",
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": ""
+  }
+]
+
